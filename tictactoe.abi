@@ -36,14 +36,6 @@
             "base": "",
             "fields": [
                 {
-                    "name": "boardWidth",
-                    "type": "uint16"
-                },
-                {
-                    "name": "boardHeight",
-                    "type": "uint16"
-                },
-                {
                     "name": "challenger",
                     "type": "name"
                 },
@@ -66,7 +58,7 @@
             ]
         },
         {
-            "name": "welcome",
+            "name": "move",
             "base": "",
             "fields": [
                 {
@@ -75,6 +67,36 @@
                 },
                 {
                     "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "by",
+                    "type": "name"
+                },
+                {
+                    "name": "row",
+                    "type": "uint16"
+                },
+                {
+                    "name": "column",
+                    "type": "uint16"
+                }
+            ]
+        },
+        {
+            "name": "restart",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "by",
                     "type": "name"
                 }
             ]
@@ -92,8 +114,13 @@
             "ricardian_contract": ""
         },
         {
-            "name": "welcome",
-            "type": "welcome",
+            "name": "move",
+            "type": "move",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "restart",
+            "type": "restart",
             "ricardian_contract": ""
         }
     ],
